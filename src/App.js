@@ -1,16 +1,20 @@
 import React from 'react';
-import MovieList from './components/MoviesList';
-import UpComingList from "./components/UpComingList";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Layout from './layouts/Main';
+import Login from "./pages/Login";
+import Home from './pages/Home';
+
 
 function App() {
   return (
-    <div className="App">
-      <Layout>
-        <MovieList/>
-        <UpComingList/>
-      </Layout>
-    </div>
+    <Router>
+      <div className="App">
+        <Layout>
+          <Route exact path="/" component={Home} />
+          <Route path="/login" component={Login} />
+        </Layout>
+      </div>
+    </Router>
   );
 }
 

@@ -9,7 +9,7 @@ export default class UpComingList extends Component {
   };
 
   componentDidMount() {
-    api.get("/api/movies").then(response => {
+    api.get("/api/movies?status=coming_soon").then(response => {
       this.setState({
         movies: response.data.data
       });

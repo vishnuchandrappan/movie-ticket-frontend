@@ -7,6 +7,7 @@
 @import "./variables.scss";
 @import "./nav.scss";
 @import './moviesList.scss';
+@import './login.scss';
 
 body{
   font-family: $font_1;
@@ -17,8 +18,19 @@ body{
   margin: 10px auto;
 }
 
+a{
+  text-decoration: none;
+  color:inherit;
+}
+
 @media screen and (max-width:768px){
   .container{
     max-width: 95%;
+  }
+}
+
+@media screen and (max-width:1024px){
+  .container{
+    max-width: 75%;
   }
 }

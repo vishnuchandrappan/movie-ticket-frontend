@@ -8,7 +8,7 @@ export default class MoviesList extends Component {
   };
 
   componentDidMount() {
-    api.get("/api/movies").then(response => {
+    api.get("/api/movies?status=now_showing").then(response => {
       this.setState({
         movies: response.data.data
       });
