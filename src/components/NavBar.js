@@ -14,7 +14,7 @@ export default function NavBar() {
             </span>
             <span>Movies</span>
             <span className="login">
-              <Link to="/login">Login</Link>
+              <Link to="/login">Login/Signup</Link>
             </span>
           </div>
           <div className="burger">

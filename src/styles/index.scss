@@ -23,6 +23,26 @@ a{
   color:inherit;
 }
 
+.btn-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+  margin: 10px 0;
+  input{
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    box-shadow: 0px 2px 3px gray;
+    background-color: transparent;
+    cursor: pointer;
+    &:hover{
+      background-color: rgba(gray,0.1);
+      box-shadow: 0px 2px 6px black;
+    }
+  }
+}
+
 @media screen and (max-width:768px){
   .container{
     max-width: 95%;
