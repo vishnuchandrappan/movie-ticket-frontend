@@ -40,7 +40,7 @@ export default function Signup() {
             <div className="form-group">
               <span>
                 Already have an account account ? Login
-                <Link to="/login" className="btn btn-outline-info">
+                <Link to="/login" className="text-info">
                   &nbsp;here
                 </Link>
               </span>

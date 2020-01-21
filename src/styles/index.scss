@@ -43,14 +43,14 @@ a{
   // }
 }
 
-@media screen and (max-width:768px){
-  .container{
-    max-width: 95%;
-  }
-}
-
 @media screen and (max-width:1024px){
   .container{
     max-width: 75%;
+  }
+}
+
+@media screen and (max-width:768px){
+  .container{
+    max-width: 100%;
   }
 }

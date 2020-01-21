@@ -27,10 +27,14 @@ export default function Login() {
             <input className="btn btn-dark" type="submit" value="Login" />
           </div>
           <div className="form-group">
-            <span>Forgot Password ? Reset here</span>
+            <span>Forgot Password ? Reset
+            <Link to="#" className="text-info">
+              &nbsp;here
+            </Link>
+            </span>
             <span>
-              Don't have account ? Create Account
-              <Link to="/signup" className="btn btn-outline-info">
+              Don't have account ? Signup
+              <Link to="/signup" className="text-info">
                 &nbsp;here
               </Link>
             </span>
