@@ -1,7 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
-export default function Signup() {
+export default class Signup extends Component {
+  render() {
     return (
       <div>
         <div className="login-page container-fluid">
@@ -11,9 +12,10 @@ export default function Signup() {
               <label htmlFor="username">Email ID</label>
               <input
                 className="form-control"
-                type="text"
+                type="email"
                 name="username"
                 id="username"
+                required
               />
             </div>
             <div className="form-group">
@@ -23,6 +25,7 @@ export default function Signup() {
                 type="password"
                 name="password"
                 id="password"
+                required
               />
             </div>
             <div className="form-group">
@@ -32,6 +35,7 @@ export default function Signup() {
                 type="password"
                 name="password_confirmation"
                 id="password_confirmation"
+                required
               />
             </div>
             <div className="btn-container">
@@ -50,4 +54,5 @@ export default function Signup() {
         </div>
       </div>
     );
+  }
 }
