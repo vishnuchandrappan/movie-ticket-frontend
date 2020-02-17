@@ -1,6 +1,6 @@
 import React from "react";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   return (
@@ -18,14 +18,10 @@ export default function NavBar() {
             <Nav.Link>Movies</Nav.Link>
             <NavDropdown title="Login/Signup" id="basic-nav-dropdown">
               <NavDropdown.Item>
-                <Link to="/login">
-                  Login
-                </Link>
+                <Link to="/login">Login</Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link to="/signup">
-                  Signup
-                </Link>
+                <Link to="/signup">Signup</Link>
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>

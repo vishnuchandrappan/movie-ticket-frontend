@@ -19,7 +19,7 @@ body {
 }
 
 .container-fluid{
-  animation: fade 0.6s;
+  animation: fade 0.6s linear;
 }
 
 .form-group{
@@ -63,7 +63,6 @@ a {
 @keyframes fade{
   from{
     opacity: 0;
-    transform: translateX(100vw);
   }
   to{
     opacity: 1;
